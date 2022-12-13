@@ -1,9 +1,9 @@
 import React from 'react'
 
-export default function netflix() {
+export default function smartview() {
   return (
     <div>
-      Netflix
+      SmartView
     </div>
   )
 }

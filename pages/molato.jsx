@@ -1,9 +1,9 @@
 import React from 'react'
 
-export default function netflix() {
+export default function Molato() {
   return (
     <div>
-      Netflix
+      Molato
     </div>
   )
 }
