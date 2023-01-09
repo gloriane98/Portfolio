@@ -4,14 +4,14 @@ import Link from "next/link";
 import NavLogo from "../public/assets/icon.svg";
 import {AiOutlineClose, AiOutlineMail, AiOutlineMenu} from "react-icons/ai";
 import {FaGithub, FaLinkedinIn} from "react-icons/fa";
-import { BsFillPersonLinesFill } from 'react-icons/bs';
+import { useTranslation } from "react-i18next";
+import { useRouter } from "next/router";
 
 export default function Navbar() {
     const [nav, setNav]=useState(false);
     const [navBg, setNavBg] = useState('#FCF9F2');
     const [shadow, setShadow] = useState(false);
     const [linkColor, setLinkColor] = useState('#6D493B');
-
     useEffect(() => {
         const handleShadow = () => {
           if (window.scrollY >= 90) {
@@ -27,6 +27,12 @@ export default function Navbar() {
 
     const handleNav=()=>{
         setNav(!nav)
+    }
+// translations
+    const { push, pathname } = useRouter();
+
+    const handleLangSwitch = lang => {
+      push(pathname, pathname, { locale: lang });
     }
 
   return (
@@ -60,11 +66,11 @@ export default function Navbar() {
                     <li className=" ml-10 text-sm uppercase hover:border-b">Projects</li>
                 </Link>
                 <Link href="/#contact">
-                    <li className=" ml-10 text-sm uppercase hover:border-b">Contact</li>
+                    <li className=" ml-10 text-sm uppercase hover:border-b">Conctact</li>
                 </Link>
                 <Link href="https://drive.google.com/file/d/1MDmbkYcfEvrXFuc7aktKPe3pdiajXm_5/view?usp=sharing">
                     <a target="_blank" rel="noopener noreferrer" className=" ml-10 text-sm uppercase hover:border-b">
-                        Download Cv
+                    Dowload CV
                     </a>
                 </Link>
             </ul>
@@ -83,12 +89,14 @@ export default function Navbar() {
         }>
             <div>
                 <div className="flex w-full items-center justify-between">
+                    <Link href="/">
                     <Image 
                         src={NavLogo}
                         alt="/"
                         width={120}
                         height={80}
                     />
+                    </Link>
                     <div onClick={handleNav} className="rounded-full shadow-lg shadow-[#FCF9F2]-400 p-3 cursor-pointer">
                          <AiOutlineClose size={25} />
                     </div>
@@ -98,7 +106,7 @@ export default function Navbar() {
                 </div>
             </div>
             {/* New menu */}
-            <div py-4 flex flex-col >
+            <div className="py-4 flex flex-col" >
                 <ul>
                     <Link href="/">
                         <li onClick={() => setNav(false)} className="py-4 text-sm" >Home</li>
@@ -117,7 +125,7 @@ export default function Navbar() {
                     </Link>
                     <Link href="https://drive.google.com/file/d/1MDmbkYcfEvrXFuc7aktKPe3pdiajXm_5/view?usp=sharing">
                         <a onClick={() => setNav(false)} target="_blank" rel="noopener noreferrer" className="py-4 text-sm" >
-                            Download CV
+                        Dowload CV
                         </a>
                     </Link>
                 </ul>

@@ -1,0 +1,45 @@
+{
+    "menu":{
+        "home":"Home",
+        "about":"About",
+        "skills":"Skills",
+        "projects":"Projects",
+        "contact":"Contact",
+        "dowload":" Download Cv"
+    },
+    "started":"Let's build something legendary together",
+    "link":"Let's Connect",
+    "home":{
+        "start":"LET'S BUILD SOMETHING TOGETHER",
+        "presentation":{
+            "salutation":"Hi, I'm ",
+            "trade":"Full Stack Developer"
+        },
+        "offre":"Digital solutions developer,UX and UI designer & graphic designer. Technology, software development and design are my passions."
+    },
+    "about":{
+        "title":"About",
+        "question":"Who I Am",
+        "description":"I am a full stack developer with experience in software development and graphic design. I am always developing my skills and learning something new. I have a thirst for knowledge and a desire to understand how things work.I believe that being a great developer is not about using a specific language, but about choosing the best tool for the job. I am extremely motivated to constantly develop my skills and grow professionally.",
+        "check":"Check out some my latest projects."
+    },
+    "skills":{
+        "titre":"Skills",
+        "capacity":"What I Can Do"
+    },
+    "projects":{
+        "titles":"Projects",
+        "work":"What I've Built",
+        "learn":"More Info"
+    }, 
+    "contact":{
+        "get":"Get In Touch",
+        "metier":"Full Stack Developer",
+        "disponible":"I am available for freelance or full-time positions. Contact me and let's talk.",
+        "connect":"Connect With Me",
+        "name":"Name",
+        "phone":"Phone Number",
+        "subject":"Subject",
+        "send":"SEND MESSAGE"
+    }
+}

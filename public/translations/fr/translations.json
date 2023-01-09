@@ -1,0 +1,42 @@
+{
+    "menu":{
+        "home":"Accueil",
+        "about":"A propos",
+        "skills":"Compétences",
+        "projects":"Projets",
+        "contact":"Contact",
+        "dowload":" Télécharger Cv",
+        "started":"Construisons ensemble quelque chose de légendaire",
+        "link":"Connectons nous"
+    } ,
+      "home":{
+        "start" : "CONSTRUISONS QUELQUE CHOSE ENSEMBLE",
+        "presentation" : "Bonjour, je suis Gloriane Kingolo Développeuse Full Stack",
+        "offre" : "Développeur de solutions numériques, designer UX et UI et graphiste. La technologie, le développement de logiciels et le design sont mes passions."
+    },
+    "about":{
+        "title" : "A propos",
+        "question" : "Qui je suis",
+        "description" : "Je suis un développeur full stack avec de l'expérience dans le développement de logiciels et la conception graphique. Je suis toujours en train de développer mes compétences et d'apprendre quelque chose de nouveau. J'ai une soif de connaissances et un désir de comprendre comment les choses fonctionnent.Je crois qu'être un grand développeur ne consiste pas à utiliser un langage spécifique, mais à choisir le meilleur outil pour le travail. Je suis extrêmement motivé pour développer constamment mes compétences et évoluer professionnellement.",
+        "check" : "Jetez un coup d'oeil à mes derniers projets."
+    },
+    "skills":{
+        "titre" : "Compétences",
+        "capacity" : "Ce que je peux faire"
+    },
+    "projects":{
+        "title" : "Projets",
+        "work" : "Ce que j'ai construit",
+        "learn" : "Plus d'Info"
+    }, 
+    "contact":{
+        "get" : "Get In Touch",
+        "metier" : "Développeuse Full Stack",
+        "disponible" : "Je suis disponible pour des postes en freelance ou à temps plein. Contactez-moi et discutons-en.",
+        "connect" : "Connectez-vous avec moi",
+        "name" : "Nom",
+        "phone" : "Numéro de téléphone",
+        "subject" : "Sujet",
+        "send" : "ENVOYER LE MESSAGE"
+    }
+}
