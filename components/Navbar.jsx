@@ -43,13 +43,13 @@ export default function Navbar() {
           ? 'fixed w-full h-20 shadow-xl z-[100] ease-in-out duration-300'
           : 'fixed w-full h-20 z-[100]'
       }>
-      <div className="flex justify-between items-center w-full h-full px-2 2xl:px-16">
+      <div className="flex justify-between items-center w-full h-full px-8 2xl:px-18">
         <Link href="/">
         <Image 
         src={NavLogo}
         alt="/" 
-        width="150" 
-        height="100" />
+        width="50" 
+        height="45" />
         </Link>
         <div>
             <ul style={{ color: `${linkColor}` }} className="hidden md:flex px-6">
@@ -93,8 +93,8 @@ export default function Navbar() {
                     <Image 
                         src={NavLogo}
                         alt="/"
-                        width={120}
-                        height={80}
+                        width="50" 
+                        height="45"
                     />
                     </Link>
                     <div onClick={handleNav} className="rounded-full shadow-lg shadow-[#FCF9F2]-400 p-3 cursor-pointer">
