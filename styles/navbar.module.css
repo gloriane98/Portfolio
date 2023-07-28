@@ -1,0 +1,125 @@
+.navbarBG {
+  background-color: var(--nav-bg-color);
+  width: 100%;
+  height: 5rem;
+  padding: 0 var(--padding-container);
+  border: 1px solid red;
+  display: flex;
+  align-items: center;
+}
+.navbar {
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+  border: 1px solid green;
+}
+.listItems {
+  display: flex;
+  align-items: center;
+  list-style: none;
+  justify-content: space-evenly;
+  border: 1px solid yellow;
+}
+.link {
+  text-decoration: none;
+  color: var(--text-color);
+  font-size: 16px;
+  font-weight: 500;
+  padding-left: 2rem;
+}
+.link:hover {
+  color: var(--title-color);
+}
+.contactBtn {
+  text-decoration: none;
+  color: var(--text-color);
+  font-size: 16px;
+  font-weight: 500;
+  display: flex;
+  padding: 10px 40px;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+  border-radius: 10px;
+  background: var(--white-color);
+  box-shadow: 2px 2px 1px 0px rgba(0, 0, 0, 0.1);
+  margin-left: 2rem;
+  cursor: pointer;
+}
+.contactBtn:hover {
+  color: var(--white-color);
+  background: var(--title-color);
+}
+.langBtn {
+  text-decoration: none;
+  color: var(--text-color);
+  font-size: 16px;
+  font-weight: 500;
+  display: inline-flex;
+  padding: 10px;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+  border-radius: 10px;
+  background: var(--white-color);
+  margin-left: 2rem;
+}
+.langBtn:hover {
+  color: var(--white-color);
+  background: var(--title-color);
+}
+.hidden{
+  display: none;
+}
+
+/* Responsive class*/
+.bgMenu {
+  background-color: var( --nav-bg-color);
+  width: 100%;
+  height: 100vh;
+  position: fixed;
+  left: 0;
+  top: 0;
+  border: 2px solid black;
+}
+.openMenu {
+  background-color: var(  --mobile-bg-color);
+  position: fixed;
+  width: 75%;
+  height: 100vh;
+  left: 0;
+  top: 0;
+  padding: 10px;
+  transition-timing-function: ease-in;
+  transition-duration: 500ms;
+  border: 1px solid red;
+}
+.blocNav {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.menusPosition{
+  margin-top: 3rem;
+}
+.spaceMenu{
+  height: 50vh;
+  border: 1px solid red;  
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around ;
+}
+@media screen and (min-width: 768px) {
+  .mobileMenu {
+    display: none;
+  }
+ .listItems.hiddenDesktopMenu{
+  display: none !important;
+
+ }
+  .listItemsMobile{
+    display: none;
+  }
+}
